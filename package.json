@@ -107,6 +107,15 @@
       "last 1 safari version"
     ]
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/konnga/react-chrome-extensions"
+  },
+  "keywords": [
+    "react",
+    "extension",
+    "chrome"
+  ],
   "jest": {
     "roots": [
       "<rootDir>/src"
