@@ -1,0 +1,46 @@
+@import '../../theme/palette.less';
+@import '../../theme/dark.less';
+
+body {
+  display: flex;
+  overflow-y: scroll;
+  min-width: 600px;
+  color: var(--secondary-text-color);
+  background: var(--bodyBg);
+  font-size: 1rem;
+  line-height: 1.3rem;
+  justify-content: center;
+  .options {
+    padding: 10px;
+    .ant-tabs {
+      color: var(--secondary-text-color);
+      h1, h2, h3, h4, h5, label, span {
+        color: var(--secondary-text-color);
+      }
+      .ant-tabs-content-holder {
+        width: 500px;
+        border: 1px solid #f0f0f0;
+        .ant-tabs-tabpane {
+          padding: 24px 0 24px 24px;
+        }
+        .ant-divider {
+          border-color: var(--separator-color);
+        }
+        .setting-title {
+          padding-top: 10px;
+          font-size: 2.5rem;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+}
+.theme-mode-light {
+  .options {
+    .ant-tabs {
+      .ant-tabs-content-holder {
+        background: #fff;
+      }
+    }
+  }
+}

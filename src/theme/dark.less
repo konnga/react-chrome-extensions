@@ -1,0 +1,179 @@
+// @import '~antd/dist/antd.dark.less';
+.up {
+  color: var(--upColor) !important;
+}
+.down {
+  color: var(--downColor) !important;
+}
+.norm {
+  color: var(--secondary-text-color) !important;
+}
+.theme-mode-dark {
+  .ant-tag-blue {
+    color: rgb(23, 125, 220);
+    background: rgb(17, 29, 44);
+    border-color: rgb(21, 57, 91);
+  }
+  .ant-select-multiple .ant-select-selection-item {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgb(48, 48, 48);
+  }
+  .ant-select-item-option-selected:not(.ant-select-item-option-disabled) {
+      color: rgba(255, 255, 255, 0.65);
+      font-weight: 600;
+      background-color: rgb(17, 27, 38);
+  }
+  .header {
+    .anticon:not(.anticon-account-book) {
+      color: var(--icon-btn-fill-color);
+    }
+  }
+  .anticon-close-circle, .anticon-close {
+    color: var(--icon-btn-fill-color);
+  }
+}
+body {
+  background: var(--bodyBg);
+  .ant-tabs {
+    color: var(--secondary-text-color);
+    &:not(.stock-tab) {
+      h1, h2, h3, h4, h5, label, span, div, label {
+        color: var(--secondary-text-color);
+      }
+    }
+    .ant-tabs-nav {
+      &::before {
+        border-bottom-color: var(--separator-color);
+      }
+    }
+  }
+  .ant-card {
+    background: var(--mainBg);
+    color: var(--secondary-text-color) !important;
+    border: 1px solid var(--borderColor);
+  }
+  .ant-modal {
+    .ant-modal-content {
+      background: var(--mainBg);
+      color: var(--secondary-text-color);
+      .up {
+        color: var(--upColor);
+      }
+      .down {
+        color: var(--downColor);
+      }
+      .norm {
+        color: var(--secondary-text-color) !important;
+      }
+      label {
+        background: var(--mainBg);
+        color: var(--secondary-text-color);
+      }
+      .fund-name {
+        color: var(--secondary-text-color);
+      }
+      .ant-modal-confirm-title {
+        color: var(--secondary-text-color);
+      }
+      .ant-modal-header {
+        background: var(--mainBg);
+        color: var(--secondary-text-color);
+        border-bottom-color: var(--separator-color);
+        .ant-modal-title {
+          color: var(--primary-text-color);
+        }
+      }
+      .ant-modal-footer {
+        border-top-color: var(--separator-color);
+      }
+      .ant-select-selector {
+        color: var(--secondary-text-color);
+        background: var(--input-bg-color);
+        border-color: var(--borderColor);
+      }
+      .ant-timeline {
+        color: var(--secondary-text-color);
+      }
+    }
+  }
+  .ant-statistic {
+    .text {
+      color: var(--secondary-text-color);
+      h3 {
+        color: var(--secondary-text-color);
+      }
+    }
+    .ant-row {
+      color: var(--secondary-text-color);
+    }
+  }
+  .ant-message {
+    .ant-message-notice-content {
+      background-color: var(--mainBg);
+      color: var(--secondary-text-color);
+    }
+  }
+  .ant-popover-inner {
+    background: var(--mainBg);
+    box-shadow: var(--shadowColor) 0px 3px 6px -4px, 
+                        var(--shadowColor) 0px 6px 16px 0px, 
+                        var(--shadowColor) 0px 9px 28px;
+    .ant-form-item {
+      margin-bottom: 0 !important;
+    }
+    label {
+      color: var(--secondary-text-color);
+    }
+  }
+  .ant-popover-arrow {
+    border-color: var(--mainBg) !important;
+  }
+  .ant-popover-inner, .ant-modal {
+    .ant-input-affix-wrapper, .ant-select-selector {
+      border-color: var(--borderColor);
+      background: var(--input-bg-color);
+      input {
+        color: var(--secondary-text-color);
+        background: var(--input-bg-color);
+      }
+    }
+    .ant-popover-message-title {
+      color: var(--secondary-text-color);
+      input {
+        background: var(--input-bg-color);
+        color: var(--secondary-text-color);
+      }
+    }
+    .ant-btn {
+      background: var(--mainBg);
+      color: var(--secondary-text-color);
+    }
+    .ant-btn-primary {
+      color: #fff;
+      background: #1890ff;
+      border-color: #1890ff;
+      span {
+        color: #fff;
+      }
+    }
+    .ant-btn-primary[disabled] {
+      color: var(--btn-disable-text-color);
+      background: var(--btn-disable-bg-color);
+      border-color: var(--input-border-color);
+      text-shadow: none;
+      box-shadow: none;
+      span {
+        color: var(--btn-disable-text-color);
+      }
+    }
+  }
+  .ant-select-dropdown {
+    background: var(--mainBg);
+    .ant-select-item {
+      color: var(--secondary-text-color);
+    }
+    .ant-select-item-option-active:not(.ant-select-item-option-disabled) {
+      background: var(--bodyBg);
+    }
+  }
+}
